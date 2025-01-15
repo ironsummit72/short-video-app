@@ -43,6 +43,14 @@ const userSchema = new Schema<userDB>({
       ref: "Post",
     },
   ],
+  displayPicture: {
+    type: String,
+    default: null,
+  },
+  bio: {
+    type: String,
+    default: null,
+  },
 });
 const userModel = mongoose.model("User", userSchema);
 export default userModel;
