@@ -7,4 +7,6 @@ export interface userDB{
     followers:[],
     following:[]
     password:string,
+    displayPicture:string
+    bio:string
 }
